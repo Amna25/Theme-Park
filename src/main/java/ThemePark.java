@@ -1,4 +1,5 @@
 import attractions.Attraction;
+import behaviours.IReviewed;
 import stalls.Stall;
 
 import java.util.ArrayList;
@@ -13,13 +14,15 @@ public class ThemePark {
         this.stalls = new ArrayList<>();
     }
 
-    public ArrayList<Attraction> getAttraction() {
+    public ArrayList<Attraction> getAttractionCount() {
         return attraction;
     }
 
-    public ArrayList<Stall> getStalls() {
+    public ArrayList<Stall> getStallsCount() {
         return stalls;
     }
 
-    
+    public String getAlReviewed(IReviewed iReviewed){
+        return iReviewed.getName();
+    }
 }
